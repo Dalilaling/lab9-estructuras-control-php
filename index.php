@@ -82,7 +82,7 @@ $textoMiercoles = $esMiercoles ? "Sí" : "No";
   <header>
     <!-- TODO CSS-3: agrega un atributo style (CSS en línea) a este h1 -->
     <h1>Laboratorio #9 · Estructuras de control</h1>
-    <p id="autor">Autor: <?= $danawing ?></p>
+    <p id="autor">Autor: <?= $nombreCompleto ?></p>
   </header>
 
   <!-- TODO 0.5: el id de <main> es "lab9-" + tu apellido en minúsculas, sin tildes (ver documento) -->
