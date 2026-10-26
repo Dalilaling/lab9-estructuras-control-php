@@ -166,12 +166,17 @@ $total = $base + ($base * ITBMS);
   <meta name="lab9-huella" content="<?= $huella ?>">
   <title>Lab 9 · Estructuras de control</title>
   <!-- TODO CSS-1: enlaza css/estilos.css (CSS externo) -->
+  <link rel="stylesheet" href="css/estilos.css">
   <!-- TODO CSS-2: agrega un <style> interno con al menos 2 reglas -->
+  <style>
+    h2 { color: #1f3a5f; margin-top: 0; }
+    table { width: 100%; border-collapse: collapse; }
+  </style>
 </head>
 <body>
   <header>
     <!-- TODO CSS-3: agrega un atributo style (CSS en línea) a este h1 -->
-    <h1>Laboratorio #9 · Estructuras de control</h1>
+    <h1 style="text-align: center; text-decoration: underline;">Laboratorio #9 · Estructuras de control</h1>
     <p id="autor">Autor: <?= $nombreCompleto ?></p>
   </header>
 
@@ -203,7 +208,8 @@ $total = $base + ($base * ITBMS);
     <section id="ej2">
       <h2>Ejercicio 2 · Notas</h2>
       <!-- TODO CSS-4: agrega la clase "ok" o "error" con PHP según el estado -->
-      <p id="ej2-res" class="resultado">Promedio: <?= number_format($promedio, 2) ?> | Letra: <?= $letra ?> | Estado: <?= $estado ?> | Cuadro de honor: <?= $cuadroHonor ?></p>
+          <!-- 5. Clase dinámica ok o error con ternario -->
+      <p id="ej2-res" class="resultado <?= $estado === 'Aprobado' ? 'ok' : 'error' ?>">Promedio: <?= number_format($promedio, 2) ?> | Letra: <?= $letra ?> | Estado: <?= $estado ?> | Cuadro de honor: <?= $cuadroHonor ?></p>
     </section>
 
     <section id="ej3">
