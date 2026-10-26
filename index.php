@@ -146,8 +146,7 @@ if ($esMiembro) {
 
 $base = $monto - ($monto * $pct / 100);
 
-$esRecargo = ($hora >= 22 || $hora < 6);
-if ($esRecargo) {
+if ($hora >= 22 || $hora < 6) {
     $base = $base + ($base * 0.03);
     $textoRecargo = "Sí";
 } else {
